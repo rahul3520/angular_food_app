@@ -9,6 +9,7 @@ import { ChinaFoodComponent } from './china-food/china-food.component';
 import { DessertsFoodComponent } from './desserts-food/desserts-food.component';
 import { DrinksWaterComponent } from './drinks-water/drinks-water.component';
 import { GroceryFoodComponent } from './grocery-food/grocery-food.component';
+import { IndianFoodComponent } from './indian-food/indian-food.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GroceryFoodComponent } from './grocery-food/grocery-food.component';
     ChinaFoodComponent,
     DessertsFoodComponent,
     DrinksWaterComponent,
-    GroceryFoodComponent
+    GroceryFoodComponent,
+    IndianFoodComponent
   ],
   imports: [
     BrowserModule,
