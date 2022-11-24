@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,42 @@ import { DrinksWaterComponent } from './drinks-water/drinks-water.component';
 import { GroceryFoodComponent } from './grocery-food/grocery-food.component';
 import { IndianFoodComponent } from './indian-food/indian-food.component';
 import { PizzaFoodComponent } from './pizza-food/pizza-food.component';
+import { RouterModule, Routes } from '@angular/router';
+
+
+const myRoute:Routes=[
+  {
+    path:"",
+    component:HomePageComponent
+  },
+  {
+    path:"indianfood",
+    component:IndianFoodComponent
+  },
+  {
+    path:"chinafood",
+    component:ChinaFoodComponent
+  },
+  {
+    path:"desserts",
+    component:DessertsFoodComponent
+  },
+  {
+    path:"drinks",
+    component:DrinksWaterComponent
+  },
+    
+  {
+    path:"grocery",
+    component:GroceryFoodComponent
+  },
+ 
+  {
+    path:"pizza",
+    component:PizzaFoodComponent
+  }
+  
+]
 
 @NgModule({
   declarations: [
@@ -26,7 +62,8 @@ import { PizzaFoodComponent } from './pizza-food/pizza-food.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
