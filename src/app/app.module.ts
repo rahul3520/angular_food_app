@@ -10,6 +10,7 @@ import { DessertsFoodComponent } from './desserts-food/desserts-food.component';
 import { DrinksWaterComponent } from './drinks-water/drinks-water.component';
 import { GroceryFoodComponent } from './grocery-food/grocery-food.component';
 import { IndianFoodComponent } from './indian-food/indian-food.component';
+import { PizzaFoodComponent } from './pizza-food/pizza-food.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { IndianFoodComponent } from './indian-food/indian-food.component';
     DessertsFoodComponent,
     DrinksWaterComponent,
     GroceryFoodComponent,
-    IndianFoodComponent
+    IndianFoodComponent,
+    PizzaFoodComponent
   ],
   imports: [
     BrowserModule,
