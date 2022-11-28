@@ -12,6 +12,8 @@ import { GroceryFoodComponent } from './grocery-food/grocery-food.component';
 import { IndianFoodComponent } from './indian-food/indian-food.component';
 import { PizzaFoodComponent } from './pizza-food/pizza-food.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 
 const myRoute:Routes=[
@@ -58,12 +60,14 @@ const myRoute:Routes=[
     DrinksWaterComponent,
     GroceryFoodComponent,
     IndianFoodComponent,
-    PizzaFoodComponent
+    PizzaFoodComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
