@@ -46,6 +46,10 @@ const myRoute:Routes=[
   {
     path:"pizza",
     component:PizzaFoodComponent
+  },
+  {
+    path:"login",
+    component:LoginComponent
   }
   
 ]
